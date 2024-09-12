@@ -1,0 +1,103 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;    
+}
+#preloader{
+    background: #191919 url(./gif/0b9309cf2dd079c998a5414e32a04618.gif) no-repeat center center ;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    
+
+}
+.main-box-for-game{
+    padding: 15px;
+    background-color: #1A4870;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.winnerName{
+    font-size: 35px;
+    font-weight: 900;
+    color: #5B99C2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 12px;
+}
+.hide{
+
+    display: none;
+}
+.button-box{
+  padding: 0 50px;
+}
+.newgame{
+    margin: auto;
+}
+
+.newgame,.reset{
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.game-box{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.game-box>h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.game-box > .game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 290px;
+}
+
+.game-box > .game > .boxbutton {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #5B99C2;
+    font-size: 65px;
+    /* color: rgb(141, 30, 30); */
+    font-weight: 500;
+}
+
+.cross-line {
+    position: relative;
+}
+
+.cross-line::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px; /* Adjust thickness */
+    background-color: red; /* Adjust color */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* ------------------ coustom scrollbar----------------- */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#642bff,#ff22e6);
+}
